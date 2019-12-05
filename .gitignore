@@ -8,6 +8,7 @@
 out
 gen
 src/com/zxj/file
+test
 ### Java template
 # Compiled class file
 *.class
