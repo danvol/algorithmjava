@@ -1,4 +1,4 @@
-
+# [算法笔记](https://github.com/zxjlfx/Notes/blob/master/AlgorithmNotes.md)
 # heap(堆树)
 [堆排序代码示例](src/com/zxj/heap/HeapSort.java)<br>
 支持大根堆和小根度，递归建堆，堆的插入和删除
