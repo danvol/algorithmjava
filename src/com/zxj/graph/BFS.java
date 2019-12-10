@@ -15,13 +15,34 @@ import java.util.concurrent.ArrayBlockingQueue;
  * @author littleboy
  */
 public class BFS {
-    int n;//地图行
-    int m;//地图列
-    int dx;//解救位置
-    int dy;//解救位置
-    int[][] data = new int[n][m];//地图集
-    boolean[][] mark;//是否走过
-    int next[][] = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};//下一步位置
+    /**
+     * 地图行
+     */
+    int n;
+    /**
+     * 地图列
+     */
+    int m;
+    /**
+     * 解救位置
+     */
+    int dx;
+    /**
+     * 解救位置
+     */
+    int dy;
+    /**
+     * 地图集
+     */
+    int[][] data = new int[n][m];
+    /**
+     * 是否走过
+     */
+    boolean[][] mark;
+    /**
+     * 下一步位置
+     */
+    int[][] next = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};
 
     public BFS(int n, int m, int dx, int dy, int[][] data) {
         this.n = n;
@@ -36,6 +57,7 @@ public class BFS {
         int[][] data = {{0, 0, 1, 0}, {0, 0, 0, 0}, {0, 0, 1, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}};
         int dx = 3;
         int dy = 2;
+        data.hashCode();
         System.out.println(data.length + " " + data[0].length);
         BFS bfs = new BFS(data.length, data[0].length, dx, dy, data);
         bfs.bfs(0, 0);

@@ -12,15 +12,42 @@ import javax.imageio.ImageReader;
  * 从[0][0]开始
  */
 public class DFS {
-    int n;//地图的行
-    int m;//地图的列
-    int dx;//需要找的x坐标
-    int dy;//需要找的y坐标
-    int[][] data;//地图标记
-    boolean[][] mark;//路径标记
-    boolean[][] steps;//最短的路径
-    int[][] next = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};//四个方向
-    int minStep = Integer.MAX_VALUE;//最短的路径
+    /**
+     * 地图的行
+     */
+    int n;
+    /**
+     * 地图的列
+     */
+    int m;
+    /**
+     * 需要找的x坐标
+     */
+    int dx;
+    /**
+     * 需要找的y坐标
+     */
+    int dy;
+    /**
+     * 地图标记
+     */
+    int[][] data;
+    /**
+     * 路径标记
+     */
+    boolean[][] mark;
+    /**
+     * 最短的路径
+     */
+    boolean[][] steps;
+    /**
+     * 四个方向
+     */
+    int[][] next = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};
+    /**
+     * 最短的路径
+     */
+    int minStep = Integer.MAX_VALUE;
 
     public DFS(int n, int m, int dx, int dy, int[][] data) {
         this.n = n;
@@ -34,19 +61,26 @@ public class DFS {
 
     public static void main(String[] args) {
         int[][] data = {{0, 0, 1, 0}, {0, 0, 0, 0}, {0, 0, 1, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}};
-        int dx = 3;//需要查找的x坐标
-        int dy = 2;//需要查找的y坐标
-        int startX = 0;//起点x坐标
-        int startY = 0;//起点y坐标
+        //需要查找的x坐标
+        int dx = 3;
+        //需要查找的y坐标
+        int dy = 2;
+        //起点x坐标
+        int startX = 0;
+        //起点y坐标
+        int startY = 0;
         DFS dfs = new DFS(data.length, data[0].length, dx, dy, data);
-        dfs.mark[startX][startY] = true;//起点标记为true
+        //起点标记为true
+        dfs.mark[startX][startY] = true;
         dfs.dfs(startX, startY, 0);
         if(dfs.minStep == Integer.MAX_VALUE) {
             System.out.println("找不到");
             return;
         }
-        System.out.println(dfs.minStep);//最小步数
-        dfs.printStep(dfs.steps, startX, startY);//输出路径
+        //最小步数
+        System.out.println(dfs.minStep);
+        //输出路径
+        dfs.printStep(dfs.steps, startX, startY);
     }
 
     /**
