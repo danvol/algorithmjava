@@ -66,7 +66,7 @@ public class Dijkstra {
                     loc = j;
                 }
             }
-            //没有点
+            //已经遍历完所有的点
             if (loc == 0) {
                 break;
             }
