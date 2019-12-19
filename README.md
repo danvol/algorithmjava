@@ -16,3 +16,5 @@
 [BFS广度优先搜索](src/com/zxj/graph/BFS.java)
 
 [DFS深度优先搜索](src/com/zxj/graph/DFS.java)
+
+[Dijkstra算法求解最短路径](src/com/zxj/graph/Dijkstra.java)
