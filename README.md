@@ -1,5 +1,11 @@
+ \* [<a href="\./Heap\.md">堆树笔记</a>](#%E5%A0%86%E6%A0%91%E7%AC%94%E8%AE%B0)
+
+\* [graph(图)](#graph%E5%9B%BE)
+
+ \* [<a href="\./Graph\.md">图遍历笔记</a>](#%E5%9B%BE%E9%81%8D%E5%8E%86%E7%AC%94%E8%AE%B0)
 
 # heap(堆树)
+
 ## [堆树笔记](./Heap.md)
 
 [堆排序代码示例](src/com/zxj/heap/HeapSort.java)<br>
