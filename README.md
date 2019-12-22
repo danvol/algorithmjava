@@ -3,7 +3,7 @@
 * [graph(图)](#graph%E5%9B%BE)
   * [图遍历笔记](#%E5%9B%BE%E9%81%8D%E5%8E%86%E7%AC%94%E8%AE%B0)
 # heap(堆树)
-[堆树笔记](./Heap.md)
+## [堆树笔记](./Heap.md)
 
 [堆排序代码示例](src/com/zxj/heap/HeapSort.java)<br>
 支持大根堆和小根度，递归建堆，堆的插入和删除
@@ -14,7 +14,7 @@
 我的求解思路：每次运行前创建多个文件，顺序的添加数字，模拟动态添加，然后每次读取一个文件，依次插入到topK中，这样把所有的文件读取完后，即为全部数字的topK。
 
 # graph(图)
-[图遍历笔记](./Graph.md)
+## [图遍历笔记](./Graph.md)
 
 [BFS广度优先搜索](src/com/zxj/graph/BFS.java)
 
