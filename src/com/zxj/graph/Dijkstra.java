@@ -16,8 +16,8 @@ public class Dijkstra {
 
 
     public static void main(String[] args) {
-        //表示n个点，m条边，firstPoint点为起点
-        int n = 6, m = 6, firstPoint = 1;
+        //表示n个点，firstPoint点为起点
+        int n = 6, firstPoint = 1;
         /*
          * 图的加权邻接矩阵
          */
@@ -35,6 +35,7 @@ public class Dijkstra {
             if (map[1][i] <= 0) {
                 dis[i] = Integer.MAX_VALUE;
             } else {
+                //1到其他点的距离
                 dis[i] = map[1][i];
             }
         }

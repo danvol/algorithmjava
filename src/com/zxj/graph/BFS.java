@@ -57,7 +57,6 @@ public class BFS {
         int[][] data = {{0, 0, 1, 0}, {0, 0, 0, 0}, {0, 0, 1, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}};
         int dx = 3;
         int dy = 2;
-        data.hashCode();
         System.out.println(data.length + " " + data[0].length);
         BFS bfs = new BFS(data.length, data[0].length, dx, dy, data);
         bfs.bfs(0, 0);
